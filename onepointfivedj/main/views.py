@@ -9,3 +9,6 @@ def new(request):
 
 def discography(request):
     return render(request, 'main/discography.html')
+
+def concerts(request):
+    return render(request, 'main/concerts.html')
