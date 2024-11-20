@@ -1,0 +1,97 @@
+/* Задний фон дискографии */
+.main-content {
+  background-color: #000000;
+  min-height: 100vh;
+  margin-left: 220px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Строка альбомы */
+.albums {
+  background-color: #FF4500;
+  color: #ffffff;
+  border: 3px solid white;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.albums p{
+  background-color: #FF4500;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 300;
+}
+
+.album-cards {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет перенос карточек */
+  gap: 20px; /* Расстояние между карточками */
+  justify-content: space-between; /* Равномерное распределение по строке */
+  margin-bottom: 20px;
+}
+
+.album-card {
+  flex: 1 1 calc(25% - 20px); /* Карточка занимает 25% строки с учетом отступов */
+  max-width: calc(25% - 20px); /* Ограничение ширины */
+  background-color: #FF8C00;
+  color: #000000;
+  border: 3px solid white;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  padding: 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  border: 3px solid white;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+}
+.album-card img {
+  height: 200px;
+  border: 3px solid white;
+  margin-bottom: 5px;
+}
+.album-title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Стили для кнопки аккордеона */
+.album-card .btn-link {
+  color: #000000; /* Черный текст */
+  background-color: #FF8C00; /* Фон кнопки, совпадающий с карточкой */
+  border: none; /* Убираем контуры */
+  padding: 15px;
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+}
+
+.album-card .btn-link:hover {
+  color: #000000; /* Черный цвет текста при наведении */
+  background-color: #FF4500; /* Фон при наведении */
+  text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+
+.album-card .btn-link:focus {
+  outline: none; /* Убираем стандартную обводку при фокусе */
+  box-shadow: none; /* Убираем тень при фокусе */
+}
+
+/* Убираем белый фон у карточки и заголовка */
+.album-card .card {
+  background-color: transparent; /* Фон прозрачный */
+  border: none; /* Убираем границы */
+}
+
+.album-card .card-header {
+  background-color: inherit; /* Наследуем фон карточки */
+  border: none; /* Убираем границы */
+}

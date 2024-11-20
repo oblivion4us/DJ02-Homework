@@ -1,9 +1,23 @@
 {% extends 'main/layout.html' %}
+{% load static %}
 
 {% block title %}
-    Вторая страница
+    Контакты
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'main/css/video_style.css' %}">
 {% endblock %}
 
 {% block content %}
-    Вторая страница
+    <div class="contact-block">
+      <h2>Контакты Loqiemean</h2>
+      <a href="https://music.yandex.ru/artist/4545156?utm_source=desktop&utm_medium=copy_link" target="_blank">Яндекс.Музыка</a><br>
+      <a href="https://music.apple.com/us/artist/loqiemean/680146234" target="_blank">Apple Music</a><br>
+      <a href="https://open.spotify.com/artist/2Nl6vz4KNIHQjyoOLTadCn?si=vnC1uO7cTQaDgumKOL-PCA&amp;artist-id=2Nl6vz4KNIHQjyoOLTadCn&amp;lang=ru" target="_blank">Spotify</a><br>
+      <a href="https://vk.com/loqiemeanmusic" target="_blank">ВКонтакте</a><br>
+      <a href="https://www.instagram.com/la_loqiemean/profilecard/?igsh=MTF3aDB3cTVtYm5ibw==" target="_blank">Инстаграм</a><br>
+      <a href="https://t.me/Loqiemeantg" target="_blank">Телеграм</a><br>
+      <a href="https://youtube.com/@loqiemean?si=l_KpZ7uFu7oLULAK" target="_blank">YouTube</a>
+    </div>
 {% endblock %}
