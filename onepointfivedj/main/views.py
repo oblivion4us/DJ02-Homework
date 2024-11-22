@@ -5,7 +5,7 @@ def index(request):
     return render(request, 'main/index.html')
 
 def new(request):
-    return render(request, 'main/new.html')
+    return render(request, 'main/news.html')
 
 def discography(request):
     return render(request, 'main/discography.html')
